@@ -6,6 +6,13 @@ User.create!(name:  "xxx",
              activated: true,
              activated_at: Time.zone.now)
 
+User.create!(name:  "yyy",
+             email: "y@y.com",
+             password:              "yyyyyy",
+             password_confirmation: "yyyyyy",
+             activated: true,
+             activated_at: Time.zone.now)
+
 User.create!(name:  "zzz",
              email: "z@z.com",
              password:              "zzzzzz",
