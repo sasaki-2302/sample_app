@@ -31,7 +31,7 @@ User.create!(name:  "zzz",
 end
 # micropost
 users = User.order(:created_at).take(6)
-50.times do
+20.times do
   content = Faker::Lorem.paragraph
   users.each { |user| user.microposts.create!(content: content) }
 end
@@ -39,7 +39,7 @@ end
 # relationsip
 users = User.all
 user  = users.first
-following = users[1..17]
-followers = users[3..20]
+following = users[1..6]
+followers = users[3..7]
 following.each { |followed| user.follow(followed) }
 followers.each { |follower| follower.follow(user) }
