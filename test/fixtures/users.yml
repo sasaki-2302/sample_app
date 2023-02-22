@@ -12,3 +12,10 @@ yyy:
   password_digest: <%= User.digest('yyyyyy') %>
   activated: true
   activated_at: <%= Time.zone.now %>
+
+zzz:
+  name: zzz
+  email: z@z.com
+  password_digest: <%= User.digest('zzzzzz') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
